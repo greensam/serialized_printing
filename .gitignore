@@ -2,3 +2,4 @@ makefile
 *.pdf
 *.tex
 serial_output
+venv
