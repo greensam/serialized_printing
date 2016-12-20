@@ -10,9 +10,9 @@ do
     pdflatex -output-directory=pdfs -jobname="serialize_$i" "\def\SERIAL{$i} \input{$1}"
 done
 
-# rm pdfs/*.aux pdfs/*.log
+rm pdfs/*.aux pdfs/*.log
 
-# "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" combined.pdf pdfs/serialize_*.pdf
+"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o combined.pdf `ls pdfs/*.pdf`
 
-# rm -r pdfs
+rm -r pdfs
 
