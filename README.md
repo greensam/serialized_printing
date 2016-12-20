@@ -1,2 +1,9 @@
 # serialized_printing
-Python client to print latex documents with unique serial numbers (for use, for example, in exams)
+
+Quick hit bash script to generate a bunch of sequentially numbered LaTeX documents and then combine
+then into 1 PDF.
+
+### Dependencies
+
+- Bash
+- Mac OS X >= Tiger (uses a Mac system utility to combine rendered PDFs)
